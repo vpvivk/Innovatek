@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Innovatek</title>
+    <!-- Bootstrap CDN-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/17df61c7e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  </head>
+  <body class="scrollable-content">
+    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Innovatek</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clints">client</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Software Development</a></li>
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li><a class="dropdown-item" href="#">App Development</a></li> 
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#">Technical Support</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact Us">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="./images/pexels-1.jpg" class="d-block w-100" alt="photo1" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Innovative Solutions for Modern Businesses</h5>
+            <p>Cutting-edge technology solutions including cloud-based software and AI applications to enhance business efficiency and effectiveness.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/pexels-2.jpg" class="d-block w-100" alt="photo2" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Expert Consulting Services</h5>
+            <p>Experienced consultants provide guidance to improve business operations, supply chain optimization, and profitability.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/pexels-3.jpg" class="d-block w-100" alt="photo3" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Customized Training Programs</h5>
+            <p>Tailored employee training to meet specific business objectives, from leadership development to technical skills.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- feactures -->
+    <div class="container-fluid pt-3 pb-3">
+      <div class="row">
+        <div class="col-12 text-center display-6 mt-5 mb-3">
+          <h3>
+            Discover our range of cutting-edge features and services that empower your business, enhance productivity, and drive growth to new heights.
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-md-3 text-center">
+          <h1 class="text-danger"><i class="fa-solid fa-code"></i></h1>
+          <h5>Building the Future</h5>
+          <p class="text-md-center">
+            Meet our talented developer team shaping the future of technology
+          </p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h1 class="text-dark"><i class="fa-solid fa-chalkboard-user"></i></h1>
+          <h5>Insights at a Glance</h5>
+          <p class="text-md-center">
+            Get a comprehensive overview of your business performance with our user-friendly featuring real-time insights
+          </p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h1 class="text-secondary">
+            <i class="fa-solid fa-calendar-days"></i>
+          </h1>
+          <h5>Quick and Efficient</h5>
+          <p class="text-md-center">
+            Rapid and reliable services to meet your business needs with speed and efficiency
+          </p>
+        </div>
+      </div>
+      <!-- horizontal line -->
+      <hr />
+    </div>
+
+    <!-- growth section -->
+    <div class="container-fluid">
+      <h3 class="text-center">Organisation Growth</h3>
+      <div class="row justify-content-evenly align-items-center mt-3 mb-3">
+        <div class="col-md-5 mt-3 mb-3">
+          <img
+            src="./images/company-growth.jpg"
+            alt="company-growth"
+            height="250px"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-5 mt-3 mb-3">
+          <h4>Software Development</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Success example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-success" style="width: 85%"></div>
+          </div>
+          <h4>Web Development</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Info example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-info" style="width: 90%"></div>
+          </div>
+          <h4>App Development</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Warning example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-warning" style="width: 75%"></div>
+          </div>
+          <h4>Technical Support</h4>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Danger example"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar bg-danger" style="width: 95%"></div>
+          </div>
+        </div>
+      </div>
+      <hr/>
+    </div>
+    <!-- Clients -->
+    <div class="container-fluid">
+      <h3 class="text-center mt-5 mb-5">Words from Our Satisfied Customers</h3>
+      <div class="row justify-content-evenly align-items-center">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./clients-images/pexels-1.jpg"
+              class="card-img-top img-fluid"
+              alt="clients-images"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Aarav Gunnar</h5>
+              <p class="card-text">
+                Excellent service, great value for money. Highly recommended!" - Aarav Gunnar.
+              </p>
+              <a href="#" class="btn btn-primary text-warning">★★★★☆</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="./clients-images/pexels-2.jpg" class="card-img-top img-fluid" alt="client2" />
+            <div class="card-body">
+              <h5 class="card-title"> Roman Santiago</h5>
+              <p class="card-text">
+                I am impressed with the level of professionalism and attention to detail. - Roman Santiago.
+              </p>
+              <a href="#" class="btn btn-primary text-warning">★★★★☆</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem">
+            <img src="./clients-images/pexels-3.jpg" class="card-img-top img-fluid" alt="client3" />
+            <div class="card-body">
+              <h5 class="card-title">Luciano Mateo</h5>
+              <p class="card-text">
+                Working with this company was a pleasure. They exceeded our expectations. - Luciano Mateo.
+              </p>
+              <a href="#" class="btn btn-primary text-warning">★★★★☆</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr/>
+    </div>
+    <!-- contact section -->
+    <div class="container-fluid bg-body-secondary">
+      <h3 class="text-center mt-3 mb-3">Let's Connect</h3>
+      <div class="row justify-content-evenly mt-4">
+        <!-- contact form -->
+        <div class="col-md-5 mt-4 mb-4">
+          <h3>Contact Form</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!-- contact map -->
+        <div class="col-md-5 mt-4">
+          <h3 class="mb-3">Address</h3>
+          <address>
+            <i class="fa-solid fa-city text-dark"></i> Jabalpur,Madhaya
+            Pradesh,Pin-482004 <br />
+            <i class="fa-solid fa-mobile"></i> +91-9999999999
+          </address>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29337.836636676722!2d79.93115834527134!3d23.198302522566745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae4cf3c2309d%3A0x48e4242f33dc5112!2sAdhartal%2C%20Jabalpur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1677179319310!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="img-fluid"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- FAQ -->
+    <div class="container-fluid">
+      <h3 class="text-center mt-3 mb-3">FAQ</h3>
+      <div class="row justify-content-center mb-5">
+        <di class="col-md-10">
+          <div class="accordion accordion-flush border" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What products or services do you offer? 
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">We offer a wide range of products and services, including but not limited to clothing, electronics, home goods, and consulting services. Please visit our website for a full list of offerings or contact our customer service department for more information.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  What is your company's refund or return policy?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Our company's refund or return policy allows customers to return products within 30 days of purchase for a full refund or exchange, provided the item is in its original condition. Certain restrictions may apply, so please refer to our website or contact customer service for more information.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  How can I contact your customer service department? 
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">You can contact our customer service department through our website's contact form or by phone during our business hours. Our customer service team is dedicated to assisting you with any questions or concerns you may have about our products or services.</div>
+              </div>
+            </div>
+          </div>
+        </di>
+      </div>
+    </div>
+    
+    <div class="container-fluid bg-black">
+      <!-- links  -->
+      <div class="row justify-content-evenly mt-3 mb-3">
+        <div class="col-md-3">
+          <h5 class="mb-2 mt-3 text-white ">Innovatek</h5>
+          <p class="text-white-50">Innovatek is a technology company that specializes in developing cutting-edge software solutions for businesses. They offer a range of services including software development, web development, and cloud solutions.</p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="mb-2 mt-3 text-white ">Important Links</h5>
+           <ul class="list-unstyled" >
+            <li ><a href="#home" class="text-decoration-none text-white-50" >Home</a></li>
+            <li><a href="#About" class="text-decoration-none text-white-50">About Us</a></li>
+            <li><a href="#Contact" class="text-decoration-none text-white-50" >Contact Us</a></li>
+            <li><a href="#Team" class="text-decoration-none text-white-50" >Our Team</a></li>
+            <li><a href="#Client" class="text-decoration-none text-white-50" >Client</a></li>
+           </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="mb-2 mt-3 text-white">Contact Us</h5>
+          <p class="text-white-50" >
+              Jabalpur, Madhaya Pradesh,Pin-482004 <br/>
+              <i class="fa-solid fa-phone"></i> <a href="tel:+91 9999999999" class="text-decoration-none text-white">+91-9999999999</a>
+          </p>
+        </div>
+      </div>
+      <!-- copyright section -->
+      <div class="row justify-content-center">
+        <div class="col-md-5 text-center text-white p-3">
+          Copyright &copy 2023 | All Copyright Reserved | Innovatek
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bootstrap js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

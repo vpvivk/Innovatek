@@ -1,0 +1,31 @@
+
+
+.navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: var(--bs-navbar-brand-font-size);
+    color: rgb(15 14 14);
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-link{
+      font-weight: 500;
+      transition: none;
+  }
+
+  .scrollable-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+  }
+  
+  .scrollable-content::-webkit-scrollbar-thumb {
+    background-color: #8d8c8cd8;
+  }
+  
+  .scrollable-content::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+  }
+  
